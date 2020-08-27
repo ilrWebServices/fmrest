@@ -1,0 +1,7 @@
+name: 'FileMaker Data API'
+type: module
+description: 'FileMaker Data API is a service that facilitates access the FileMaker Data API'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: FileMaker
+  - key:key

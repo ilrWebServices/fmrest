@@ -1,0 +1,11 @@
+{
+  "name": "drupal/fmrest",
+  "type": "drupal-module",
+  "description": "FileMaker Data API is a service that facilitates access the FileMaker Data API.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": {
+    "drupal/key": "^1.14"
+  }
+}
