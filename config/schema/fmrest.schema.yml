@@ -1,0 +1,18 @@
+fmrest.fmrest_server.*:
+  type: config_entity
+  label: 'FileMaker REST Server config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+    url:
+      type: string
+      label: 'Base URL'
+    key:
+      type: string
+      label: 'Credentials key'

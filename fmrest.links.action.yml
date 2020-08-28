@@ -1,0 +1,5 @@
+entity.fmrest_server.add_form:
+  route_name: entity.fmrest_server.add_form
+  title: 'Add FileMaker REST server'
+  appears_on:
+    - entity.fmrest_server.collection

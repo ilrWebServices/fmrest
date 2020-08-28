@@ -1,0 +1,7 @@
+
+# FileMaker REST Server menu items definition
+entity.fmrest_server.collection:
+  title: 'FileMaker REST servers'
+  route_name: entity.fmrest_server.collection
+  description: 'Create and manage FileMaker REST servers.'
+  parent: system.admin_structure
