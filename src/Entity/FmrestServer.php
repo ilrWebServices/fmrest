@@ -40,6 +40,8 @@ use Drupal\Core\Config\Entity\ConfigEntityBase;
  *     "id",
  *     "label",
  *     "url",
+ *     "db",
+ *     "version",
  *     "key",
  *   }
  * )
@@ -68,10 +70,31 @@ class FmrestServer extends ConfigEntityBase implements FmrestServerInterface {
   protected $url;
 
   /**
+   * The FileMaker REST Server database.
+   *
+   * @var string
+   */
+  protected $db;
+
+  /**
+   * The FileMaker Data API version.
+   *
+   * @var string
+   */
+  protected $version;
+
+  /**
    * The FileMaker REST Server credentials key.
    *
    * @var string
    */
   protected $key;
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getKey() {
+    return $this->entityTypeManager()->getStorage('key')->load($this->key);
+  }
 
 }

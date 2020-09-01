@@ -17,6 +17,8 @@ class FmrestServerListBuilder extends ConfigEntityListBuilder {
     $header['label'] = $this->t('Label');
     $header['id'] = $this->t('Machine name');
     $header['url'] = $this->t('Base URL');
+    $header['version'] = $this->t('API version');
+    $header['database'] = $this->t('Database');
     $header['key'] = $this->t('Credentials Key');
     return $header + parent::buildHeader();
   }
@@ -28,7 +30,9 @@ class FmrestServerListBuilder extends ConfigEntityListBuilder {
     $row['label'] = $entity->label();
     $row['id'] = $entity->id();
     $row['url'] = $entity->get('url');
-    $row['key'] = $entity->get('key');
+    $row['version'] = $entity->get('version');
+    $row['database'] = $entity->get('db');
+    $row['key'] = $entity->getKey()->toLink(NULL, 'edit-form')->toString();
     return $row + parent::buildRow($entity);
   }
 

@@ -43,6 +43,28 @@ class FmrestServerForm extends EntityForm {
       '#required' => TRUE,
     ];
 
+    $form['db'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Database'),
+      '#maxlength' => 255,
+      '#default_value' => $this->entity->get('db'),
+      '#description' => $this->t('The name of the database for this connection.'),
+      '#required' => TRUE,
+    ];
+
+    $form['version'] = [
+      '#type' => 'select',
+      '#title' => $this->t('API version'),
+      '#options' => [
+        'v1' => 'v1',
+        'v2' => 'v2',
+        'vLatest' => 'vLatest',
+      ],
+      '#default_value' => $this->entity->get('version'),
+      '#description' => $this->t('The FileMaker Data API version.'),
+      '#required' => TRUE,
+    ];
+
     $form['key'] = [
       '#type' => 'key_select',
       '#title' => $this->t('Credentials key'),

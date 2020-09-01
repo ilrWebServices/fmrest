@@ -13,6 +13,12 @@ fmrest.fmrest_server.*:
     url:
       type: string
       label: 'Base URL'
+    db:
+      type: string
+      label: 'Database'
+    version:
+      type: string
+      label: 'API version'
     key:
       type: string
       label: 'Credentials key'
