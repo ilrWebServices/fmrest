@@ -1,0 +1,4 @@
+services:
+  fmrest.client:
+    class: Drupal\fmrest\RestClient
+    arguments: ['@http_client', '@state', '@cache.default', '@serialization.json', '@entity_type.manager']
