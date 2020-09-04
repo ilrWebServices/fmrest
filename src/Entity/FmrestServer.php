@@ -30,10 +30,10 @@ use Drupal\Core\Config\Entity\ConfigEntityBase;
  *     "uuid" = "uuid"
  *   },
  *   links = {
- *     "add-form" = "/admin/structure/fmrest_server/add",
- *     "edit-form" = "/admin/structure/fmrest_server/{fmrest_server}/edit",
- *     "delete-form" = "/admin/structure/fmrest_server/{fmrest_server}/delete",
- *     "collection" = "/admin/structure/fmrest_server"
+ *     "add-form" = "/admin/config/services/fmrest_server/add",
+ *     "edit-form" = "/admin/config/services/fmrest_server/{fmrest_server}/edit",
+ *     "delete-form" = "/admin/config/services/fmrest_server/{fmrest_server}/delete",
+ *     "collection" = "/admin/config/services/fmrest_server"
  *   },
  *   config_prefix = "fmrest_server",
  *   config_export = {
