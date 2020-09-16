@@ -82,6 +82,11 @@ class RestClient implements RestClientInterface {
     $this->json = $json;
     $this->entityTypeManager = $entity_type_manager;
     $this->fmrestServerStorage = $entity_type_manager->getStorage('fmrest_server');
+
+    // if (count($fmrest_servers) === 1) {
+    //   $this->server = reset($fmrest_servers);
+    // }
+
     return $this;
   }
 
